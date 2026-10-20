@@ -26,8 +26,8 @@ jobs:
         # Just pick an arbitrary device
         # No MAGISK_PREINIT_DEVICE and SKIP_ROOTLESS leads to only release be checked in checkBuildNecessary
         run: |
-          echo "DEVICE_ID=caiman" >> $GITHUB_ENV
-          echo "SKIP_ROOTLESS=true" >> $GITHUB_ENV
+          echo "DEVICE_ID=mustang" >> $GITHUB_ENV
+          echo "SKIP_ROOTLESS=false" >> $GITHUB_ENV
       - run: sudo apt-get install -y jq curl git
       - id: release
         env:
